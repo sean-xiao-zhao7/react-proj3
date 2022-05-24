@@ -1,13 +1,14 @@
 import React from "react";
 import Header from "./components/Header/Header";
 import MealsContainer from "./components/Meals/MealsContainer";
+import CartProvider from "./store/CartProvider";
 
 function App() {
     return (
-        <React.Fragment>
+        <CartProvider>
             <Header />
             <MealsContainer />
-        </React.Fragment>
+        </CartProvider>
     );
 }
 

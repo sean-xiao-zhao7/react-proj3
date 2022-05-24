@@ -35,7 +35,7 @@ const MealsList = (props) => {
                 return (
                     <li key={index}>
                         <Meal meal={meal} />
-                        <MealOrder />
+                        <MealOrder meal={meal} />
                     </li>
                 );
             })}
